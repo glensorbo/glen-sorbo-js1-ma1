@@ -45,6 +45,8 @@ heading.style.fontSize = "2em";
  * Add a class to the heading variable called subheading.
  */
 
+heading.classList.add("subheading");
+
 /*
  * Question 5:
  * Write code that selects all the p elements on a page and assigns them to a variable called paragraphs.
