@@ -55,10 +55,16 @@ heading.classList.add("subheading");
 
 const paragraphs = document.querySelectorAll("p");
 
+paragraphs.forEach((paragraph) => {
+  paragraph.style.color = "red";
+});
+
 /*
  * Question 6:
  * Select the div with a class of results, assign it to a variable called resultsContainer and set its inner HTML to be <p>New paragraph</p> and its background colour to be yellow.
  */
+
+const resultsContainer = document.querySelector(".results");
 
 /*
  * Question 7:
