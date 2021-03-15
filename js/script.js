@@ -94,3 +94,27 @@ logList(cats);
  * Call the function and pass in the cats array as the argument.
  * Assign the return value of the function to the innerHTML property of the element on the HTML page with a class of cat-container.
  */
+
+// Did an arrow function to do both ways
+
+const createCats = (cats) => {
+  let HTML = ``;
+  cats.forEach((cat) => {
+    if (!cat.age) {
+      cat.age = "Age unknown";
+    }
+    HTML += `
+      <div>
+        <h5>${cat.name}</h5>
+        <p>${cat.age}</p>
+      </div>
+    `;
+  });
+  return HTML;
+};
+
+const HTML = createCats(cats);
+
+const catContainer = document.querySelector(".cat-container");
+
+catContainer.innerHTML = HTML;
