@@ -61,10 +61,15 @@ paragraphs.forEach((paragraph) => {
 
 /*
  * Question 6:
- * Select the div with a class of results, assign it to a variable called resultsContainer and set its inner HTML to be <p>New paragraph</p> and its background colour to be yellow.
+ * Select the div with a class of results, assign it to a variable called resultsContainer
+ * and set its inner HTML to be <p>New paragraph</p> and its background colour to be yellow.
  */
 
 const resultsContainer = document.querySelector(".results");
+
+resultsContainer.innerHTML = "<p>New paragraph</p>";
+
+resultsContainer.style.backgroundColor = "yellow";
 
 /*
  * Question 7:
@@ -72,6 +77,12 @@ const resultsContainer = document.querySelector(".results");
  * Inside the function, loop through the list parameter and console log the name property in each object.
  * Call the function and pass in the cats variable in the script.js file in the repo.
  */
+
+function logList(list) {
+  list.forEach((element) => console.log(element.name));
+}
+
+logList(cats);
 
 /*
  * Question 8:
