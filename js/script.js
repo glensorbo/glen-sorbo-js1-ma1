@@ -22,6 +22,9 @@ const cat = {
   complain: function () {
     console.log("Meow!");
   },
+  arrow: () => {
+    console.log("Meow!");
+  },
 };
 
 /*
@@ -79,7 +82,9 @@ resultsContainer.style.backgroundColor = "yellow";
  */
 
 function logList(list) {
-  list.forEach((element) => console.log(element.name));
+  list.forEach((element) => {
+    console.log(element.name);
+  });
 }
 
 logList(cats);
@@ -95,7 +100,7 @@ logList(cats);
  * Assign the return value of the function to the innerHTML property of the element on the HTML page with a class of cat-container.
  */
 
-// Did an arrow function to do both ways
+// Did an arrow function on this question to do both ways
 
 const createCats = (cats) => {
   let HTML = ``;
